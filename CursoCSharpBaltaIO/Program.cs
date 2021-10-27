@@ -26,7 +26,7 @@ namespace CursoCSharpBaltaIO
 
             switch (escolha)
             {
-                case 1: Soma();
+                case 1: Adicao();
                     break;
                 case 2: Subtracao();
                     break;
@@ -34,10 +34,12 @@ namespace CursoCSharpBaltaIO
                     break;
                 case 4: Divisao();
                     break;
-            }w
+                default: Menu();
+                    break;
+            }
         }
 
-        static void Soma()
+        static void Adicao()
         {
             Console.Clear();
             Console.WriteLine("Primeiro valor:");
@@ -47,6 +49,8 @@ namespace CursoCSharpBaltaIO
             Console.WriteLine();
             float soma = v1 + v2;
             Console.WriteLine($"O Resultado da Soma é: {soma}" );
+            Console.ReadKey();
+            Menu();
         }
 
         static void Subtracao()
@@ -59,6 +63,8 @@ namespace CursoCSharpBaltaIO
             Console.WriteLine();
             float subtrai = v1 - v2;
             Console.WriteLine($"O Resultado da Soma é: {subtrai}" );
+            Console.ReadKey();
+            Menu();
         }
 
         static void Multiplicacao()
@@ -71,6 +77,8 @@ namespace CursoCSharpBaltaIO
             Console.WriteLine();
             float multiplica = v1 * v2;
             Console.WriteLine($"O resultado é: {multiplica}");
+            Console.ReadKey();
+            Menu();
         }
 
         static void Divisao()
@@ -82,6 +90,8 @@ namespace CursoCSharpBaltaIO
             float v2 = float.Parse(Console.ReadLine());
             float divisao = v1 / v2;
             Console.WriteLine($"O Resultado é: {divisao}");
+            Console.ReadKey();
+            Menu();
         }
     }
 }
