@@ -6,10 +6,10 @@ namespace CursoCSharpBaltaIO
     {
         static void Main(string[] args)
         {
-            soma();
+            Soma();
         }
 
-        static void soma()
+        static void Soma()
         {
             Console.Clear();
             Console.WriteLine("Primeiro valor:");
@@ -21,7 +21,7 @@ namespace CursoCSharpBaltaIO
             Console.WriteLine($"O Resultado da Soma é: {soma}" );
         }
 
-        static void subtracao()
+        static void Subtracao()
         {
             Console.Clear();
             Console.WriteLine("Primeiro valor:");
@@ -29,8 +29,20 @@ namespace CursoCSharpBaltaIO
             Console.WriteLine("Segundo valor:");
             float v2 = float.Parse(Console.ReadLine());
             Console.WriteLine();
-            float soma = v1 - v2;
-            Console.WriteLine($"O Resultado da Soma é: {soma}" );
+            float subtrai = v1 - v2;
+            Console.WriteLine($"O Resultado da Soma é: {subtrai}" );
+        }
+
+        static void Multiplicacao()
+        {
+            Console.Clear();
+            Console.WriteLine("Primeiro Valor:");
+            float v1 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Segundo Valor:");
+            float v2 = float.Parse(Console.ReadLine());
+            Console.WriteLine();
+            float multiplica = v1 * v2;
+            Console.WriteLine($"O resultado é: {multiplica}");
         }
     }
 }
