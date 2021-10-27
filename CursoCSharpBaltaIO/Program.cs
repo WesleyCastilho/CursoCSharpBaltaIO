@@ -7,6 +7,12 @@ namespace CursoCSharpBaltaIO
         static void Main(string[] args)
         {
             Menu();
+            
+        }
+
+        static void Menu()
+        {
+            Console.Clear();
             Console.WriteLine("O que deseja fazer?");
             Console.WriteLine("1 - Soma");
             Console.WriteLine("2 - Subtração");
@@ -28,13 +34,7 @@ namespace CursoCSharpBaltaIO
                     break;
                 case 4: Divisao();
                     break;
-            }
-        }
-
-        static void Menu()
-        {
-            Console.Clear();
-            
+            }w
         }
 
         static void Soma()
